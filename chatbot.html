@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Staybnb resort - chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="chatbot.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  </head>
+  <body>
+    <div class="text-box">
+      <h1>I'm <span class="auto-input" style="color:gold"></span></h1>
+      <p>Staybnb resort's Chatbot feature is built to enhance the cutomer experience. It will be able to manage in an almost autonomous way the request of the customers, and this, at any time of the day or the night, by providing the necessary information.
+        The chatbot is extendable to provide booking for airport shuttle, provide wifi passwords, expose to restaurant menu and other concierge services.
+      </p>
+      <a href="">Services at Staybnb resort</a>
+  </div>
+    <div class="box">
+      <div class="top">
+        <div class="title">Chatbot</div>
+      </div>
+      <div class="mid">
+        <div class="chat">
+          <!--<h2>Answers For your Questions are below ...</h2>-->
+          <div class="icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="msg">
+          <p id="chatLog"> Let's Chat </p>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question">
+      </div>
+    </div>
+   
+    <!--<div class="wrapper">
+      <div class="title">Simple Chatbot</div>
+      <div class="box">
+          <div class="item">
+              <div class="icon">
+                  <i class="fa fa-user"></i>
+              </div>
+              <div class="msg">
+                  <p>Hello everyone, How are you?</p>
+                  <!--<p id="userBox" onkeydown="if(event.keyCode == 13){ talk()}">-->
+              <!--</div>
+              
+          </div>
+          <br clear="both">
+          <div class="item right">
+              <div class="msg">
+                  <!<p>Nice</p>-->
+                  <!--<p id="chatLog"> Let's Chat</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="typing-area">
+          <div class="input-field">-->
+              <!--<input type="text" placeholder="Type your message" required>-->
+              <!--<input type="text" id="userBox"  placeholder="Type your Question">
+              <button onclick="if(event.keyCode == 13){ talk()}">Send</button>
+          </div>
+      </div>
+  </div>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+      
+  
+      var typed=new Typed(".auto-input",{
+      strings: [" a chatbot","built to assist you","available 24/7","am fast and precise"],
+      typeSpeed:100,
+      backSpeed:100,
+     
+      loop: true
+      });
+
+  </script>
+
+    <script type="text/javascript" src="chatbot.js"></script>
+  </body>
+</html>
